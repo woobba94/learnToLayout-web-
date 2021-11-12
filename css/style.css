@@ -1,5 +1,4 @@
 html {
-    scroll-behavior: smooth;
 }
 
 main {
@@ -37,15 +36,20 @@ header {
     margin-right: 10px;
     text-decoration: none;
     font-size: 17px;
+    transition: transform 250ms;
 }
 
   /* Change the color of links on hover */
 .topnav a:hover {
-    font-weight: bolder;
+    transform: scale(1.2);
+}
+
+.topnav a.active {
+    transform: none;
 }
 
   /* Add a color to the active/current link */
-.topnav a.active {
+.topnav .active {
     font-weight: bolder;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 10px;
@@ -139,7 +143,6 @@ section {
     width: 100%;
     position: relative;
     transform: translate(0%, -10%);
-    
     font-size: 50px;
 }
 
@@ -281,6 +284,17 @@ section {
 
 .honeypot-field {
     display: none;
+}
+
+.thankyou_message {
+    position: relative;
+    font-size: 40px;
+    top: 80px;
+    padding: 100px;
+}
+
+.thankyou_message > p {
+    margin: 40px 0 40px 0;
 }
 
 
