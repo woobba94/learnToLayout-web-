@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="../reset.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/aos.css">
     <style>
 
     </style>
@@ -26,63 +27,107 @@
 
         <section id="home" class="section-one">
             <div class="section-one-img">
-                <div class="wrap-profile-text">
-                    <p class="text-init">Hi, I'm</p>
-                    <p class="text-name">Woojin Jeong</p>
-                    <p class="text-welcome">welcome for my page</p>
+                <div class="wrap-profile-text" >
+                    <div data-aos="fade-up" data-aos-duration="2000">
+                        <p class="text-init">Hi, I'm</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
+                        <p class="text-name">Woojin Jeong</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800">
+                        <p class="text-welcome">Welcome to my page</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="personal" class="section-two">
-            <div class="wrap-section-two-text">
+            <div class="wrap-section-two-text" 
+                data-aos="fade-up" data-aos-duration="2000">
                 <p class="text-personal">PERSONAL</p>
             </div>
         </section>
 
         <section id="about" class="section-three">
-            <p class="about-title">ABOUT</p>
-            <div class="about-first">
-                <p>정우진(Jeong Woo Jin) / Junior Developer</p>
-                <p>Mail : jwj3199@gmail.com</p>
-                <p>Tel : +82 10 3645 3080 (010 3645 3080)</p>
+            <div class="about-title" 
+                data-aos="fade-up" data-aos-duration="2000">
+                <p>ABOUT</p>
             </div>
-                
-            <div class="about-education">
-                <p class="about-sub-title">EDUCATION</p>
-                <p>능인고등학교(Neungin High School).</p>
-                <p>금오공과대학교(Kumoh National Institute of Technology). </p>
-                <p>소프트웨어공학 전공(Software Engineering).</p>
+            
+            <div class="about-wrap">
+                <div class="about-first" data-aos="fade-up" data-aos-duration="2000">
+                    <p>정우진(Jeong Woo Jin) / Junior Developer</p>
+                    <p>Mail : jwj3199@gmail.com</p>
+                    <p>Tel : +82 10 3645 3080 (010 3645 3080)</p>
+                </div>
+    
+                <div class="about-education" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+                    <p class="about-sub-title">EDUCATION</p>
+                    <p>능인고등학교(Neungin High School).</p>
+                    <p>금오공과대학교(Kumoh National Institute of Technology). </p>
+                    <p>소프트웨어공학 전공(Software Engineering).</p>
+                </div>
+    
+                <div class="about-career" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
+                    <p class="about-sub-title">CAREER</p>
+                    <p>career1</p>
+                    <p>career2</p>
+                    <p>career3</p>
+                </div>
             </div>
-                
-            <div class="about-career">
-                <p class="about-sub-title">CAREER</p>
-                <p>career1</p>
-                <p>career2</p>
-                <p>career3</p>
-            </div>
-                
         </section>
 
         <section id="contact" class="section-four">
-            <p class="contact-title">CONTACT</p>
-            <div class="contact-wrap">
-                <p>Name</p>
-                <input type="text">
-                <p>Email Address</p>
-                <input type="text">
-                <p>Message</p>
-                <input type="text">
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <p class="contact-title">CONTACT</p>
             </div>
-                
+            <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
+                <div class="contact-wrap">
+                    <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+                        action="https://script.google.com/macros/s/AKfycbyv7qnDKmarGeojIlFk0ycd_rwjdm5GnDMkeeo81Z4nC_CasvkJlBhcaHisWbcgGphK/exec">
+                        <div class="form-elements">
+                            <fieldset class="pure-group">
+                                <label for="name">Name</label>
+                                <input id="name" name="name" placeholder="  이름(별명)" />
+                            </fieldset>
+    
+                            <fieldset class="pure-group">
+                                <label for="email">Your Email Address</label>
+                                <input id="email" name="email" type="email" value="" required placeholder="  답변받을 이메일주소" />
+                            </fieldset>
+    
+                            <fieldset class="pure-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="10" placeholder=" 보낼 내용"></textarea>
+                            </fieldset>
+    
+                            <fieldset class="pure-group honeypot-field">
+                                <label for="honeypot">Spam Strainer</label>
+                                <input id="honeypot" type="text" name="honeypot" value="" />
+                            </fieldset>
+    
+                            <button class="btn-contact">Send</button>
+                        </div>
+    
+                        <div class="thankyou_message" style="display:none;">
+                            <h2>감사합니다! 곧 답변드리겠습니다.</h2>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
         </section>
-
-
     </main>
 
     <footer>
         footer
     </footer>
+
+    <script data-cfasync="false" src="../js/form-submission-handler.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <!-- aos init -->
+    <script>AOS.init();</script>
 </body>
 
 </html>
