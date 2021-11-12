@@ -83,7 +83,7 @@ section {
 
 .wrap-profile-text {
     position: relative;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -60%);
     text-align: center;
@@ -152,6 +152,7 @@ section {
 
 .about-wrap {
     position: relative;
+    height: 100%;
     width: max-content;
     transform: translate(-50%);
     left: 50%;
@@ -165,7 +166,7 @@ section {
 .about-first {
     display: block;
     position: relative;
-    top:100px;
+    top:55px;
     height: auto;
     text-align: start;
 }
@@ -175,7 +176,7 @@ section {
 .about-education {
     display: block;
     position: relative;
-    top: 100px;
+    top: 55px;
     height: auto;
     text-align: start;
 }
@@ -183,7 +184,7 @@ section {
 .about-career {
     display: block;
     position: relative;
-    top: 100px;
+    top: 55px;
     height: auto;
     text-align: start;
 }
