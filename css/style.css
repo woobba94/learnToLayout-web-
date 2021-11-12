@@ -214,7 +214,7 @@ section {
     width: 500px;
     text-align: start;
     position: relative;
-    padding: 10px;
+    margin: 10px 0 10px 0;
 }
 
 .pure-group > input {
@@ -373,19 +373,29 @@ footer {
     }
 
     /* contact */
+    .contact-wrap {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+
     .form-elements {
+        position: relative;
         margin-top: 30px;
-        width: max-content;
+        transform: translate(-50%);
+        left: 50%;
+        width: 80%;
     }
     
     .form-elements > fieldset {
         width: 280px;
         text-align: start;
         position: relative;
+        justify-content: center;
     }
     
-    .pure-group > input {
-        display: block;
+    .pure-group input {
         position: relative;
         margin: 15px 0 0 0;
         background-color:rgb(20, 20, 20);
