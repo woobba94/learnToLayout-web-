@@ -1,233 +1,377 @@
 html {
 }
 
-.flex-wrap {
-    display: flex;
-    flex-direction: column;
+.flex-wrap-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap-row {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
 main {
-    overflow:auto;
-    width: 100%;
+  overflow: auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
-    display: flex;
-    position: fixed;
-    width: 100%;
-    background-color: rgba( 255, 255, 255, 0 );
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    padding-top: 1rem;
-    z-index: 5;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  padding-top: 1rem;
+  z-index: 5;
 }
 
 header a {
-    color: #f2f2f2;
-    padding: 1rem;
-    margin: 0 0.5rem;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: transform 250ms;
+  color: #f2f2f2;
+  padding: 1rem;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: transform 250ms;
 }
 
 header a:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
-
 header a.active {
-    transform: none;
-    font-weight: bolder;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-    font-size: 1rem;
-    color: black;
+  transform: none;
+  font-weight: bolder;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  font-size: 1rem;
+  color: black;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+
+.section-title {
+  display: flex;
+  width: 50%;
+  font-size: 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-content {
+  display: flex;
+  width: 50%;
+  font-size: 0.8rem;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .section-one {
-    background: linear-gradient( to bottom, rgb(0, 0, 0), rgb(10, 10, 10) );
-    overflow:auto; 
-    position: relative;
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(10, 10, 10));
+  position: relative;
+  padding: 0px;
 }
 
 .section-one-img {
-    position: relative;
-    background-position: center;
-    background-image: url(../images/profile_2.jpg);
-    background-repeat : no-repeat;
-    background-size :contain;
-    height: 100vh;
+  position: relative;
+  height: inherit;
+  background-position: center;
+  background-image: url(../images/profile_2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .wrap-profile-text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  text-align: center;
+  color: white;
+}
+
+.text-init {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.text-name {
+  font-size: 4rem;
+  padding-bottom: 2rem;
+  text-shadow: 8px 8px 8px black;
+}
+
+.text-welcome {
+  font-size: 1rem;
+}
+
+.section-two {
+  background: linear-gradient(to bottom, rgb(10, 10, 10), rgb(20, 20, 20));
+}
+
+.section-three {
+  background: linear-gradient(to bottom, rgb(20, 20, 20), rgb(30, 30, 30));
+}
+
+.labal {
+  padding: 30px 0 5px 0;
+}
+
+.about-content {
+  width: 100%;
+  margin: 1rem 0;
+  height: auto;
+  text-align: start;
+}
+
+.about-sub-title {
+  position: relative;
+  font-size: 1.2rem;
+}
+
+.section-four {
+  background: linear-gradient(to bottom, rgb(30, 30, 30), rgb(40, 40, 40));
+}
+
+.contact-wrap {
+  position: relative;
+  width: max-content;
+  transform: translate(-50%);
+  left: 50%;
+  text-align: center;
+  color: white;
+}
+
+.form-elements {
+}
+
+.pure-group {
+  text-align: start;
+  position: relative;
+  margin: 10px 0 10px 0;
+}
+
+.pure-group > input {
+  display: block;
+  position: relative;
+  margin: 20px 0 20px 0;
+  background-color: rgb(20, 20, 20);
+  border: 1px solid rgb(100, 100, 100);
+  border-radius: 5px;
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  color: white;
+}
+
+.pure-group > textarea {
+  margin: 20px 0 20px 0;
+  background-color: rgb(20, 20, 20);
+  border: 1px solid rgb(100, 100, 100);
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  resize: vertical;
+  font-size: 14px;
+  color: white;
+  font-weight: 7000;
+}
+
+.btn-contact {
+  transition: transform 250ms;
+  border: none;
+  width: 120px;
+  height: 50px;
+  cursor: pointer;
+  background: none;
+  color: white;
+  font-size: 30px;
+}
+
+.btn-contact:hover {
+  transform: scale(1.5);
+}
+
+#name,
+#email {
+}
+
+.honeypot-field {
+  display: none;
+}
+
+.thankyou_message {
+  position: relative;
+  font-size: 40px;
+  top: 80px;
+  padding: 100px;
+}
+
+.thankyou_message > p {
+  margin: 40px 0 40px 0;
+}
+
+footer {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(to bottom, rgb(40, 40, 40), rgb(51, 51, 51));
+}
+
+@media (min-width: 100px) and (max-width: 500px) {
+  .bar-top {
+    background-color: black;
+    background-color: rgba(49, 49, 49, 0.5);
+  }
+
+  .topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: transform 250ms;
+  }
+
+  .topnav .active {
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    font-size: 17px;
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  .wrap-profile-text {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -60%);
     text-align: center;
     color: white;
-}
+  }
 
-.text-init {
-    font-size: 3rem;
-    padding-bottom: 1rem;
-}
+  .text-init {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
 
-.text-name {
-    font-size: 4rem;
-    padding-bottom: 2rem;
+  .text-name {
+    font-size: 45px;
+    padding-bottom: 40px;
     text-shadow: 8px 8px 8px black;
-}
+  }
 
-.text-welcome {
-    font-size: 1rem;
-}
+  .section-title {
+    font-size: 30px;
+  }
 
-.section-title {
-    font-size: 2.5rem;
-}
-
-.section {
-    overflow:auto;
-    padding-top: 150px;
+  .section {
+    padding-top: 80px;
     width: 100%;
     height: 100vh;
     position: relative;
     color: white;
-}
+  }
 
-.section-two {
-    background: linear-gradient( to bottom, rgb(10, 10, 10), rgb(20, 20, 20) );
-}
-
-.wrap-section-two-text {
-    position: relative;
-    transform: translate(0%, -10%);
-    text-align: center;
-    color: white;
-}
-
-.personal-content {
-    display: block;
-    position: relative;
-    top: 30%;
-    height: auto;
-    text-align: center;
-}
-
-.text-personal {
-    
-}
-
-.section-three {
-    background: linear-gradient( to bottom, rgb(20, 20, 20), rgb(30, 30, 30) );
-}
-
-.section-three .about-wrap {
-    display: block;
-    position: relative;
-    width: fit-content;
-    height: auto;
-}
-
-.about-title {
-    width: 100%;
-    position: relative;
-    transform: translate(0%, -10%);
-}
-
-.about-title > p {
-    text-align: center;
-}
-
-.about-wrap {
+  /* about */
+  .about-wrap {
     position: relative;
     height: 100%;
     width: max-content;
     transform: translate(-50%);
     left: 50%;
-}
+    padding: 30px;
+  }
 
-.about-wrap div p {
+  .about-wrap > div > p {
     width: fit-content;
-}
+    padding-bottom: 3px;
+    margin: 2px;
+  }
 
-.labal {
-    padding: 30px 0 5px 0;
-}
-
-.about-content {
+  .about-content {
     display: block;
     position: relative;
-    top: 55px;
+    top: 0px;
     height: auto;
     text-align: start;
-}
+  }
 
-.about-sub-title {
+  .about-content p {
+    font-size: 13px;
+  }
+
+  .labal {
+    padding: 10px 0 5px 0;
+  }
+
+  .about-content .about-sub-title {
     position: relative;
-    font-size: 30px;
-    margin: 40px 0 10px 0;
-}
+    font-size: 25px;
+    margin: 50px 0 5px 0;
+  }
 
-.section-four {
-    background: linear-gradient( to bottom, rgb(30, 30, 30), rgb(40, 40, 40) );
-}
-
-.contact-title {
-    text-align: center;
-}
-
-.contact-wrap {
+  /* contact */
+  .contact-wrap {
     position: relative;
-    width: max-content;
-    transform: translate(-50%);
-    left: 50%;
+    width: 100%;
     text-align: center;
     color: white;
-}
+  }
 
-.form-elements {
-    margin-top: 50px;
-    width: max-content;
-}
+  .form-elements {
+    position: relative;
+    margin-top: 30px;
+    transform: translate(-50%);
+    left: 50%;
+    width: 80%;
+  }
 
-.form-elements > fieldset {
-    width: 500px;
+  .form-elements > fieldset {
+    width: 280px;
     text-align: start;
     position: relative;
-    margin: 10px 0 10px 0;
-}
+    justify-content: center;
+  }
 
-.pure-group > input {
-    display: block;
+  .pure-group input {
     position: relative;
-    margin: 20px 0 20px 0;
-    background-color:rgb(20, 20, 20);
+    margin: 15px 0 0 0;
+    background-color: rgb(20, 20, 20);
     border: 1px solid rgb(100, 100, 100);
     border-radius: 5px;
     width: 100%;
     height: 30px;
     padding: 10px;
     color: white;
-}
+  }
 
-.pure-group > textarea {
-    margin: 20px 0 20px 0;
-    background-color:rgb(20, 20, 20);
+  .pure-group > textarea {
+    background-color: rgb(20, 20, 20);
     border: 1px solid rgb(100, 100, 100);
     border-radius: 5px;
+    margin: 15px 0 0 0;
     width: 100%;
     padding: 10px;
     resize: vertical;
     font-size: 14px;
     color: white;
     font-weight: 7000;
-}
-
-.btn-contact {
+  }
+  .btn-contact {
+    margin-top: 10px;
     transition: transform 250ms;
     border: none;
     width: 120px;
@@ -236,219 +380,26 @@ header a.active {
     background: none;
     color: white;
     font-size: 30px;
-}
+    border: 1px solid rgb(58, 58, 58);
+    border-radius: 5px;
+  }
 
-.btn-contact:hover {
-    transform: scale(1.5);
-}
+  .btn-contact:hover {
+    transform: scale(1.1);
+  }
 
-#name, #email {
-    
-}
-
-.honeypot-field {
+  .honeypot-field {
     display: none;
-}
+  }
 
-.thankyou_message {
+  .thankyou_message {
     position: relative;
-    font-size: 40px;
-    top: 80px;
+    font-size: 20px;
+    top: 70px;
     padding: 100px;
-}
+  }
 
-.thankyou_message > p {
+  .thankyou_message > p {
     margin: 40px 0 40px 0;
-}
-
-
-footer {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 300px;
-    background: linear-gradient( to bottom, rgb(40, 40, 40),  rgb(51, 51, 51));
-}
-
-
-
-
-
-@media (min-width: 100px) and (max-width: 500px) {
-
-    .bar-top {
-        background-color: black;
-        background-color: rgba(49, 49, 49, 0.5)
-        
-    }
-
-    .topnav a {
-        color: #f2f2f2;
-        text-align: center;
-        padding: 6px;
-        text-decoration: none;
-        font-size: 14px;
-        transition: transform 250ms;
-    }
-
-    .topnav .active {
-        font-weight: bolder;
-        background-color: rgba(255, 255, 255, 0.3);
-        border-radius: 5px;
-        font-size: 17px;
-        color: black;
-        margin-bottom: 10px;
-    }
-    
-    .wrap-profile-text {
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -60%);
-        text-align: center;
-        color: white;
-    }
-    
-    .text-init {
-        font-size: 30px;
-        padding-bottom: 20px;
-    }
-    
-    .text-name {
-        font-size: 45px;
-        padding-bottom: 40px;
-        text-shadow: 8px 8px 8px black;
-    }
-
-    .section-title {
-        font-size: 30px;
-    }
-
-    .section {
-        padding-top: 80px;
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        color: white;
-    }
-
-
-    /* about */
-    .about-wrap {
-        position: relative;
-        height: 100%;
-        width: max-content;
-        transform: translate(-50%);
-        left: 50%;
-        padding: 30px;
-    }
-
-    .about-wrap > div > p {
-        width: fit-content;
-        padding-bottom: 3px;
-        margin: 2px;
-    }
-
-    .about-content {
-        display: block;
-        position: relative;
-        top:0px;
-        height: auto;
-        text-align: start;
-    }
-
-    .about-content p {
-        font-size: 13px;
-    }
-
-    .labal {
-        padding: 10px 0 5px 0;
-    }
-    
-    .about-content .about-sub-title {
-        position: relative;
-        font-size: 25px;
-        margin: 50px 0 5px 0;
-    }
-
-    /* contact */
-    .contact-wrap {
-        position: relative;
-        width: 100%;
-        text-align: center;
-        color: white;
-    }
-
-    .form-elements {
-        position: relative;
-        margin-top: 30px;
-        transform: translate(-50%);
-        left: 50%;
-        width: 80%;
-    }
-    
-    .form-elements > fieldset {
-        width: 280px;
-        text-align: start;
-        position: relative;
-        justify-content: center;
-    }
-    
-    .pure-group input {
-        position: relative;
-        margin: 15px 0 0 0;
-        background-color:rgb(20, 20, 20);
-        border: 1px solid rgb(100, 100, 100);
-        border-radius: 5px;
-        width: 100%;
-        height: 30px;
-        padding: 10px;
-        color: white;
-    }
-    
-    .pure-group > textarea {
-        background-color:rgb(20, 20, 20);
-        border: 1px solid rgb(100, 100, 100);
-        border-radius: 5px;
-        margin: 15px 0 0 0;
-        width: 100%;
-        padding: 10px;
-        resize: vertical;
-        font-size: 14px;
-        color: white;
-        font-weight: 7000;
-    }
-    .btn-contact {
-        margin-top: 10px;
-        transition: transform 250ms;
-        border: none;
-        width: 120px;
-        height: 50px;
-        cursor: pointer;
-        background: none;
-        color: white;
-        font-size: 30px;
-        border: 1px solid rgb(58, 58, 58);
-        border-radius: 5px;
-    }
-    
-    .btn-contact:hover {
-        transform: scale(1.1);
-    }
-    
-    .honeypot-field {
-        display: none;
-    }
-    
-    .thankyou_message {
-        position: relative;
-        font-size: 20px;
-        top: 70px;
-        padding: 100px;
-    }
-    
-    .thankyou_message > p {
-        margin: 40px 0 40px 0;
-    }
-    
+  }
 }
