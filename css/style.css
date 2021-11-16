@@ -62,7 +62,7 @@ header a.active {
 
 .section-title {
   display: flex;
-  width: 50%;
+  width: 40%;
   font-size: 2.5rem;
   justify-content: center;
   align-items: center;
@@ -70,9 +70,9 @@ header a.active {
 
 .section-content {
   display: flex;
-  width: 50%;
+  width: 60%;
   font-size: 0.8rem;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -128,10 +128,57 @@ header a.active {
 }
 
 .about-content {
-  width: 100%;
+  width: 80%;
   margin: 1rem 0;
-  height: auto;
-  text-align: start;
+  height: 70%;
+  margin-left: 20%;
+  z-index: 1;
+}
+
+.section-about:before {
+  position: absolute;
+  content: "";
+  width: 60%;
+  height: 67%;
+  top: 33%;
+  left: 40%;
+  background: linear-gradient(to bottom, rgb(18, 18, 18), rgb(30, 30, 30));
+  border-radius: 50px;
+}
+
+.about-content.active {
+  transform: none;
+}
+
+.about-branch {
+  display: flex;
+  width: 80%;
+  height: 30%;
+  margin-left: 20%;
+  justify-content: start;
+  align-items: flex-end;
+  margin-bottom: 100px;
+}
+
+.about-branch label {
+  margin: 0 1rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.about-branch label:hover {
+  transform: scale(1.2);
+}
+
+.about-branch label.active {
+  transform: scale(1.2);
+  background-color: rgb(18, 18, 18);
+}
+
+input[name$="about-nav"] {
+  display: none;
 }
 
 .about-sub-title {
@@ -146,8 +193,6 @@ header a.active {
 .contact-wrap {
   position: relative;
   width: max-content;
-  transform: translate(-50%);
-  left: 50%;
   text-align: center;
   color: white;
 }
