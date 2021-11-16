@@ -15,3 +15,15 @@ $(document).ready(function () {
     })
 });
 
+
+// about radio nav function
+$(document).ready(function() {
+    $("input[name$='about-nav']").click(function() {
+        var index = $(this).val();
+        $(this).parent().addClass('active');
+        $(this).parent().siblings().removeClass('active');
+        $("div.about-content").hide();
+        $("#about" + index).addClass('active');
+        $("#about" + index).show();
+    });
+});
