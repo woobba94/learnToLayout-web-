@@ -43,7 +43,7 @@
             <section id="personal" class="section section-two">
                 <div class="flex-wrap-row">
                     <div class="section-title" data-aos="fade-up" data-aos-duration="2000">
-                        PERSONAL
+                        Who am I
                     </div>
                     <div class="section-content" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
                         will be added
@@ -53,18 +53,31 @@
 
             <section id="about" class="section section-three">
                 <div class="flex-wrap-row">
-                    <div class="about-title section-title" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="section-title" data-aos="fade-up" data-aos-duration="2000">
                         ABOUT
                     </div>
-
-                    <div class="section-content flex-wrap-column">
-                        <div class="about-content" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+                    <div class="section-about section-content flex-wrap-column">
+                        <div class="about-branch">
+                            <label for="radio1" class="active">
+                                <input id="radio1" type="radio" name="about-nav" checked="checked" value="1">
+                                <i>Personal</i>
+                            </label>
+                            <label for="radio2">
+                                <input id="radio2" type="radio" name="about-nav" value="2">
+                                <i>Education</i>
+                            </label>
+                            <label for="radio3">
+                                <input id="radio3" type="radio" name="about-nav" value="3">
+                                <i>Career</i>
+                            </label>
+                        </div>
+                        <div id="about1" class="about-content">
+                            <p class="about-sub-title">PERSONAL</p>
                             <p class="labal">정우진 (Jeong Woo Jin) / Junior Developer</p>
                             <p class="labal">Mail : jwj3199@gmail.com</p>
                             <p class="labal">Tel : +82 10 3645 3080</p>
                         </div>
-
-                        <div class="about-content" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
+                        <div id="about2" class="about-content" style="display: none;">
                             <p class="about-sub-title">EDUCATION</p>
                             <p class="labal">능인고등학교 (Neungin High School).</p>
                             <p class="labal">금오공과대학교</p>
@@ -73,7 +86,7 @@
                             <p>(Software Engineering).</p>
                         </div>
 
-                        <div class="about-content" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="700">
+                        <div id="about3" class="about-content" style="display: none;">
                             <p class="about-sub-title">CAREER</p>
                             <p class="labal">career1</p>
                             <p class="labal">career2</p>
