@@ -154,4 +154,15 @@
     select {
         font-size: 16px;
     }
+
+    /* 사파리 브라우저 */
+    input,
+    input:before,
+    input:after {
+        -webkit-user-select: initial;
+        -khtml-user-select: initial;
+        -moz-user-select: initial;
+        -ms-user-select: initial;
+        user-select: initial;
+    }
 }
