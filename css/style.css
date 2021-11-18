@@ -1,3 +1,7 @@
+* {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
 html {
 }
 
@@ -66,6 +70,7 @@ header a.active {
     font-size: 2.5rem;
     justify-content: center;
     align-items: center;
+    z-index: 3;
 }
 
 .section-content {
@@ -125,6 +130,20 @@ header a.active {
         rgb(10, 10, 10),
         rgb(20, 20, 20)
     );
+}
+.section-who:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 130%;
+    top: 0%;
+    background: linear-gradient(
+        to bottom,
+        rgb(10, 10, 10),
+        rgb(18, 18, 18)
+    );
+    border-bottom-right-radius: 50px;
+    z-index: -1;
 }
 
 .section-three {
@@ -190,7 +209,7 @@ input[name$="about-nav"] {
 .about-content-grup {
     position: relative;
     width: 100%;
-    top: 40%;
+    top: 45%;
 }
 
 .about-content-grup .about-content {
@@ -222,6 +241,19 @@ input[name$="about-nav"] {
         rgb(40, 40, 40)
     );
 }
+.section-contact:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgb(30, 30, 30),
+        rgb(18, 18, 18)
+    );
+    border-bottom-right-radius: 50px;
+    z-index: -1;
+}
 
 .contact-wrap {
     position: relative;
@@ -231,14 +263,13 @@ input[name$="about-nav"] {
 }
 
 .form-elements {
-    width: 70%;
+    width: 60%;
 }
 
 .pure-group {
     text-align: start;
     position: relative;
     margin: 5px 0;
-    color: white;
 }
 
 .pure-group > input {
@@ -250,6 +281,7 @@ input[name$="about-nav"] {
     width: 100%;
     height: 20px;
     padding: 10px;
+    color: white;
 }
 
 .pure-group > textarea {
@@ -258,10 +290,15 @@ input[name$="about-nav"] {
     border: 1px solid rgb(100, 100, 100);
     border-radius: 5px;
     width: 100%;
+    height: 160px;
     padding: 10px;
     resize: vertical;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+.pure-group > textarea::placeholder {
+    font-size: 18px;
 }
 
 .btn-contact {
@@ -304,7 +341,7 @@ input[name$="about-nav"] {
 }
 
 footer {
-    display: block;
+    display: flex;
     position: relative;
     width: 100%;
     height: 300px;
@@ -313,6 +350,9 @@ footer {
         rgb(40, 40, 40),
         rgb(51, 51, 51)
     );
+
+    justify-content: center;
+    align-items: center;
 }
 
 @media (min-width: 100px) and (max-width: 500px) {

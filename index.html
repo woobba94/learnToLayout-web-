@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/aos.css">
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
         <main class="app">
             <header>
                 <a href="#home" class="active">Home</a>
-                <a href="#personal">Personal</a>
+                <a href="#whoAmI">Who am I</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
             </header>
@@ -40,9 +41,9 @@
                 </div>
             </section>
 
-            <section id="personal" class="section section-two">
+            <section id="whoAmI" class="section section-two">
                 <div class="flex-wrap-row">
-                    <div class="section-title" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="section-title section-who" data-aos="fade-right" data-aos-duration="2000">
                         Who am I
                     </div>
                     <div class="section-content" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300">
@@ -101,7 +102,7 @@
 
             <section id="contact" class="section section-four">
                 <div class="flex-wrap-row">
-                    <div class="section-title" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="section-title section-contact" data-aos="fade-right" data-aos-duration="2000">
                         CONTACT
                     </div>
                     <form class="section-content gform pure-form pure-form-stacked" data-aos="fade-left"
@@ -110,18 +111,18 @@
                         <div class="form-elements flex-wrap-column">
                             <fieldset class="pure-group">
                                 <label for="name">Name</label>
-                                <input id="name" name="name" placeholder="  이름(별명)" />
+                                <input id="name" name="name" placeholder="이름(별명)" />
                             </fieldset>
 
                             <fieldset class="pure-group">
                                 <label for="email">Your Email Address</label>
                                 <input id="email" name="email" type="email" value="" required
-                                    placeholder="  답변받을 이메일주소" />
+                                    placeholder="답변받을 이메일주소" />
                             </fieldset>
 
                             <fieldset class="pure-group">
                                 <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="10" placeholder=" 보낼 내용"></textarea>
+                                <textarea id="message" name="message" rows="10" placeholder="보낼 내용"></textarea>
                             </fieldset>
 
                             <fieldset class="pure-group honeypot-field">
