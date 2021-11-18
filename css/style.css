@@ -357,7 +357,8 @@ footer {
     align-items: center;
 }
 .typewriter {
-    width: 390px;
+    width: 90%;
+    max-width: 390px;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: 0.1rem solid #ffffff00; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */

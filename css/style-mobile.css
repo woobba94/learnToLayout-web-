@@ -26,13 +26,20 @@
         padding-bottom: 1rem;
     }
 
-    .text-name {
+    .typewriter {
+        font-size: 10px;
+        letter-spacing: 0.4rem;
+        margin: 0.3rem auto;
+    }
+
+    /* .text-name {
         font-size: 2.5rem;
         padding-bottom: 2rem;
         text-shadow: 8px 8px 8px black;
-    }
+    } */
 
     .text-welcome {
+        padding-top: 1rem;
         font-size: 1rem;
     }
 
@@ -41,7 +48,7 @@
     }
 
     .section-title {
-        padding: 5rem 0 2rem 0;
+        padding: 5rem 0 1.5rem 0;
         width: 100%;
     }
 
@@ -67,8 +74,14 @@
         top: 3rem;
     }
 
+    .about-branch label {
+        font-size: 17px;
+        margin: 0 8px;
+    }
+
     .about-content-group {
-        top: 50%;
+        width: 90%;
+        top: 35%;
     }
 
     .about-content-group .about-content {
@@ -79,7 +92,7 @@
         position: absolute;
         content: "";
         height: 100%;
-        top: 33%;
+        top: 35%;
         background: linear-gradient(
             to bottom,
             rgb(18, 18, 18),
@@ -92,24 +105,28 @@
     }
 
     .form-elements {
+        padding-top: 0;
         width: 80%;
     }
 
     .pure-group {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .pure-group > input {
-        height: 20px;
-        padding: 15px 0;
+        height: 18px;
+        padding: 4%;
+        width: 92%;
     }
 
     .pure-group > textarea {
-        padding: 10px 0;
+        height: 15vh;
+        padding: 4%;
+        width: 92%;
     }
 
     .pure-group > textarea::placeholder {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .btn-contact {
@@ -127,7 +144,7 @@
     }
 
     .thankyou_message {
-        font-size: 30px;
+        font-size: 24px;
         padding: 0;
         text-align: center;
     }
