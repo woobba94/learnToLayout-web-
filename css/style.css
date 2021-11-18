@@ -357,6 +357,7 @@ footer {
     align-items: center;
 }
 .typewriter {
+    text-decoration: none;
     width: 90%;
     max-width: 390px;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
