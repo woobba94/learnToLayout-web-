@@ -206,13 +206,13 @@ input[name$="about-nav"] {
     border-top-left-radius: 50px;
 }
 
-.about-content-grup {
+.about-content-group {
     position: relative;
     width: 100%;
     top: 45%;
 }
 
-.about-content-grup .about-content {
+.about-content-group .about-content {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -221,10 +221,10 @@ input[name$="about-nav"] {
     justify-content: start;
     align-items: flex-start;
 }
-.about-content-grup .about-content p {
+.about-content-group .about-content p {
     margin-left: 10%;
 }
-.about-content-grup .active {
+.about-content-group .active {
     transform: none;
 }
 
@@ -308,6 +308,7 @@ input[name$="about-nav"] {
     border: none;
     width: 120px;
     height: 50px;
+    line-height: 50px;
     cursor: pointer;
     background: none;
     color: white;
@@ -356,162 +357,127 @@ footer {
 }
 
 @media (min-width: 100px) and (max-width: 500px) {
-    .bar-top {
-        background-color: black;
-        background-color: rgba(49, 49, 49, 0.5);
+    header {
+        background-color: rgba(15, 15, 15, 0.7);
+        padding: 0.5rem 0;
     }
-
-    .topnav a {
-        color: #f2f2f2;
-        text-align: center;
-        padding: 6px;
+    header a {
+        color: #ffffff;
+        padding: 0.8rem;
+        margin: 0 0.2rem;
         text-decoration: none;
-        font-size: 14px;
+        font-size: 0.9rem;
         transition: transform 250ms;
     }
 
-    .topnav .active {
-        font-weight: bolder;
-        background-color: rgba(255, 255, 255, 0.3);
-        border-radius: 5px;
-        font-size: 17px;
-        color: black;
-        margin-bottom: 10px;
+    header a:hover {
+        transform: scale(0.8);
     }
 
-    .wrap-profile-text {
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -60%);
-        text-align: center;
-        color: white;
+    header a.active {
+        border-radius: 5px;
+        font-size: 0.8rem;
     }
 
     .text-init {
-        font-size: 30px;
-        padding-bottom: 20px;
+        font-size: 2rem;
+        padding-bottom: 1rem;
     }
 
     .text-name {
-        font-size: 45px;
-        padding-bottom: 40px;
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
         text-shadow: 8px 8px 8px black;
     }
 
+    .text-welcome {
+        font-size: 1rem;
+    }
+
+    .flex-wrap-row {
+        flex-direction: column;
+    }
+
     .section-title {
-        font-size: 30px;
-    }
-
-    .section {
-        padding-top: 80px;
+        padding: 5rem 0 2rem 0;
         width: 100%;
-        height: 100vh;
-        position: relative;
-        color: white;
     }
 
-    /* about */
-    .about-wrap {
-        position: relative;
+    .section-content {
+        display: flex;
+        width: 100%;
+        font-size: 1rem;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+    }
+
+    .section-who:before {
         height: 100%;
-        width: max-content;
-        transform: translate(-50%);
-        left: 50%;
-        padding: 30px;
     }
 
-    .about-wrap > div > p {
-        width: fit-content;
-        padding-bottom: 3px;
-        margin: 2px;
+    .section-about {
+        justify-content: start;
     }
 
-    .about-content {
-        display: block;
-        position: relative;
-        top: 0px;
-        height: auto;
-        text-align: start;
+    .about-branch {
+        height: 23%;
+        top: 3rem;
     }
 
-    .about-content p {
-        font-size: 13px;
+    .about-content-group {
+        top: 50%;
     }
 
-    .labal {
-        padding: 10px 0 5px 0;
+    .about-content-group .about-content {
+        height: 280px;
     }
 
-    .about-content .about-sub-title {
-        position: relative;
-        font-size: 25px;
-        margin: 50px 0 5px 0;
+    .section-about:before {
+        position: absolute;
+        content: "";
+        height: 100%;
+        top: 33%;
+        background: linear-gradient(
+            to bottom,
+            rgb(18, 18, 18),
+            rgb(35, 35, 35)
+        );
     }
 
-    /* contact */
-    .contact-wrap {
-        position: relative;
-        width: 100%;
-        text-align: center;
-        color: white;
+    .section-contact:before {
+        display: none;
     }
 
     .form-elements {
-        position: relative;
-        margin-top: 30px;
-        transform: translate(-50%);
-        left: 50%;
         width: 80%;
     }
 
-    .form-elements > fieldset {
-        width: 280px;
-        text-align: start;
-        position: relative;
-        justify-content: center;
+    .pure-group {
+        font-size: 22px;
     }
 
-    .pure-group input {
-        position: relative;
-        margin: 15px 0 0 0;
-        background-color: rgb(20, 20, 20);
-        border: 1px solid rgb(100, 100, 100);
-        border-radius: 5px;
-        width: 100%;
-        height: 30px;
-        padding: 10px;
-        color: white;
+    .pure-group > input {
+        height: 20px;
+        padding: 15px 0;
     }
 
     .pure-group > textarea {
-        background-color: rgb(20, 20, 20);
-        border: 1px solid rgb(100, 100, 100);
-        border-radius: 5px;
-        margin: 15px 0 0 0;
-        width: 100%;
-        padding: 10px;
-        resize: vertical;
-        font-size: 14px;
-        color: white;
-        font-weight: 7000;
+        padding: 10px 0;
     }
+
+    .pure-group > textarea::placeholder {
+        font-size: 18px;
+    }
+
     .btn-contact {
-        margin-top: 10px;
-        transition: transform 250ms;
-        border: none;
-        width: 120px;
-        height: 50px;
-        cursor: pointer;
-        background: none;
-        color: white;
-        font-size: 30px;
-        border: 1px solid rgb(58, 58, 58);
-        border-radius: 5px;
+        margin-top: 15px;
+        background-color: rgb(29, 29, 29);
     }
 
     .btn-contact:hover {
         transform: scale(1.1);
+        background-color: rgb(80, 80, 80);
     }
 
     .honeypot-field {
@@ -519,13 +485,8 @@ footer {
     }
 
     .thankyou_message {
-        position: relative;
-        font-size: 20px;
-        top: 70px;
-        padding: 100px;
-    }
-
-    .thankyou_message > p {
-        margin: 40px 0 40px 0;
+        font-size: 36px;
+        padding: 0;
+        text-align: center;
     }
 }

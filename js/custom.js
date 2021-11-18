@@ -24,6 +24,7 @@ $(document).ready(function() {
         $(this).parent().siblings().removeClass('active');
         $("div.about-content").hide();
         $("#about" + index).addClass('active');
+        $("#about" + index).siblings().removeClass('active');
         $("#about" + index).show();
     });
 });
