@@ -27,8 +27,6 @@
     }
 
     .typewriter {
-        color: inherit; /* Inherit text color of parent element. */
-        text-decoration: none; /* Remove underline. */
         width: fit-content;
         font-size: 10px;
         letter-spacing: 0.4rem;
