@@ -27,10 +27,19 @@
     }
 
     .typewriter {
-        width: fit-content;
+        width: 345px;
         font-size: 10px;
         letter-spacing: 0.4rem;
         margin: 0.3rem auto;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 347px;
+        }
     }
 
     /* .text-name {
