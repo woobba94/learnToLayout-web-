@@ -365,7 +365,7 @@ footer {
 .typewriter {
     text-decoration: none;
     width: 90%;
-    max-width: 390px;
+    max-width: fit-content;
     overflow: hidden;
     border-right: 0.1rem solid #ffffff00;
     white-space: nowrap;
