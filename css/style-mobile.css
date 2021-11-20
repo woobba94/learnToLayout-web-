@@ -27,6 +27,9 @@
     }
 
     .typewriter {
+        color: inherit; /* Inherit text color of parent element. */
+        text-decoration: none; /* Remove underline. */
+        width: fit-content;
         font-size: 10px;
         letter-spacing: 0.4rem;
         margin: 0.3rem auto;
@@ -70,8 +73,8 @@
     }
 
     .about-branch {
-        height: 23%;
-        top: 3rem;
+        justify-content: space-evenly;
+        position: relative;
     }
 
     .about-branch label {
@@ -80,8 +83,9 @@
     }
 
     .about-content-group {
+        position: relative;
+        top: 15vh;
         width: 90%;
-        top: 35%;
     }
 
     .about-content-group .about-content {
